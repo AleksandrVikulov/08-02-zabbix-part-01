@@ -4,25 +4,122 @@
 
 `Процесс выполнения`
 
-1. ``
+1. `Создадим два хоста в Yandex.Cloud`
 
-2. ``
+  * `Первый хост: vikulov-vm-for-zabbix-server`
+    `На эту машину будем устанавливать Zabbix сервер`
+  * `Второй хост: vikulov-vm-for-zabbix-agent`
+    `На эту машину будем устанавливать Zabbix агент`
+    
+  `Обе машины с абсолютно одинаковыми конфигурациями, на борту Debian 11, находятся в одной подсети`
+  
+  `Внутренние IP адреса присвоены облаком Яндекс автоматически:`
+  
+  * `vikulov-vm-for-zabbix-server: 192.168.0.3`
+  * `vikulov-vm-for-zabbix-agent-linux: 192.168.0.34`
+  
+  <kbd> 
+    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/raw/main/img/task01_img01.png">
+  </kbd> 
 
-3. ``
+2. `Подключимся к машине, на которой будем устанавливать Zabbix сервер`
 
-4. ``
+  <kbd> 
+    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/raw/main/img/task01_img02.png">
+  </kbd> 
 
-5. ``
+3. `Выберем конфигурацию Zabbix аналогично той, чтобы была в лекции`
 
-6. ``
+   * `Версия:      6.0 LTS`
+   * `Дистрибутив: Debian 11`
+   * `Компоненты:  Server Frontend Agent`
+   * `База данных: PostgreSQL`
+   * `Веб-сервер:  Apache`
+   
+  <kbd> 
+    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/raw/main/img/task01_img03.png">
+  </kbd> 
 
-7. ``
+4. `Установим репозиторий Zabbix`
 
-8. ``
+   * `Получим пакет с репозиторием`
 
-9. ``
+  <kbd> 
+    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/raw/main/img/task01_img04-1.png">
+  </kbd> 
+   
+   * `Распакуем`
 
-10. ``
+  <kbd> 
+    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/raw/main/img/task01_img04-2.png">
+  </kbd> 
+   
+   * `Обновим менеджер пакетов` 
+
+  <kbd>
+    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/raw/main/img/task01_img04-3.png">
+  </kbd>
+
+5. `Установим сервер и веб-интерфейс. Агент пока не устанавливаем.`
+
+  <kbd>
+    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/raw/main/img/task01_img05.png">
+  </kbd>
+
+6. `Установим базу данных PostgreSQL`
+
+  <kbd>
+    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/raw/main/img/task01_img06.png">
+  </kbd>
+
+7. `Создадим пользователя`
+
+  <kbd>
+    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/raw/main/img/task01_img07.png">
+  </kbd>
+
+8. `Создадим базу данных`
+
+  <kbd>
+    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/raw/main/img/task01_img08.png">
+  </kbd>
+
+9. `Импортируем начальную схему и данные`
+
+  <kbd>
+    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/raw/main/img/task01_img09.png">
+  </kbd>
+
+10. `Отредактируем конфигурационный файл Zabbix, добавив туда пароль для СУБД (на скриншоте скрыт)`
+
+  <kbd>
+    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/raw/main/img/task01_img10.png">
+  </kbd>
+  
+11. `Запустим Zabbix сервер и Apache сервер. Настроем их запуск при загрузке ВМ`
+
+  <kbd>
+    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/raw/main/img/task01_img11.png">
+  </kbd>
+  
+12. `Переходим на хост и видим меню настройки Zabbix Frontend`
+
+  <kbd>
+    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/raw/main/img/task01_img12.png">
+  </kbd>
+
+13. `Настраиваем фронтенд и авторизируемся`
+
+  <kbd>
+    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/raw/main/img/task01_img13.png">
+  </kbd>
+
+14. `Попадаем в админку Zabbix`
+
+  <kbd>
+    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/raw/main/img/task01_img14.png">
+  </kbd>
+    
 
 ### Задание 2
 
