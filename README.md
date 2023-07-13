@@ -45,13 +45,13 @@
    * `Получим пакет с репозиторием`
 
   <kbd> 
-    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/raw/main/img/task01_img04-1.png">
+    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/raw/master/img/task01_img04-1.png">
   </kbd> 
    
    * `Распакуем`
 
   <kbd> 
-    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/raw/main/img/task01_img04-2.png">
+    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/master/img/task01_img04-2.png">
   </kbd> 
    
    * `Обновим менеджер пакетов` 
