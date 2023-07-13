@@ -62,8 +62,8 @@
 
 5. `Установим сервер и веб-интерфейс. Агент пока не устанавливаем.`
 
-  <kbd>
-    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/raw/main/img/task01_img05.png">
+  <kbd> 
+    <img src="AleksandrVikulov.io/08-02-zabbix-part-01/img/task01_img05.png">
   </kbd>
 
 6. `Установим базу данных PostgreSQL`
