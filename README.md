@@ -19,13 +19,13 @@
   * `vikulov-vm-for-zabbix-agent-linux: 192.168.0.34`
   
   <kbd> 
-    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/raw/main/img/task01_img01.png">
+    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/img/task01_img01.png">
   </kbd> 
 
 2. `Подключимся к машине, на которой будем устанавливать Zabbix сервер`
 
   <kbd> 
-    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/raw/main/img/task01_img02.png">
+    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/img/task01_img02.png">
   </kbd> 
 
 3. `Выберем конфигурацию Zabbix аналогично той, чтобы была в лекции`
@@ -37,7 +37,7 @@
    * `Веб-сервер:  Apache`
    
   <kbd> 
-    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/raw/main/img/task01_img03.png">
+    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/img/task01_img03.png">
   </kbd> 
 
 4. `Установим репозиторий Zabbix`
