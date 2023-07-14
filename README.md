@@ -18,11 +18,11 @@
   * `vikulov-vm-for-zabbix-server: 192.168.0.3`
   * `vikulov-vm-for-zabbix-agent-linux: 192.168.0.34`
   
-  <br>
+  <p></p>
   <kbd> 
     <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/blob/master/img/task01-img01.png">
   </kbd>
-  <br> 
+  <p></p> 
 
 2. Подключимся к машине, на которой будем устанавливать Zabbix сервер
 
