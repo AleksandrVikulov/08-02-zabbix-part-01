@@ -25,7 +25,7 @@
 2. `Подключимся к машине, на которой будем устанавливать Zabbix сервер`
 
   <kbd> 
-    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/blob/master/img/task01_img02.png">
+    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/blob/master/img/task01-img02.png">
   </kbd> 
 
 3. `Выберем конфигурацию Zabbix аналогично той, чтобы была в лекции`
