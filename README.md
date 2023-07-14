@@ -76,7 +76,7 @@
 
   <p></p>
   <kbd> 
-    <img src="ttps://github.com/AleksandrVikulov/08-02-zabbix-part-01/blob/master/img/task01-img05.png">
+    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/blob/master/img/task01-img05.png">
   </kbd>
   <p></p>
 
