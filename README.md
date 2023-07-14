@@ -19,7 +19,7 @@
   * `vikulov-vm-for-zabbix-agent-linux: 192.168.0.34`
   
   <kbd> 
-    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/img/task01_img01.png">
+    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/blob/master/img/task01-img01.png">
   </kbd> 
 
 2. `Подключимся к машине, на которой будем устанавливать Zabbix сервер`
