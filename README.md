@@ -158,27 +158,136 @@
 
 ### Задание 2
 
-`Процесс выполнения`
+Процесс выполнения
 
-1. ``
+1. Вернемся на страницу конфигурации и выберем теперь установку только агента.
 
-2. ``
+  <p></p>
+  <kbd>
+    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/blob/master/img/task02-img01.png">
+  </kbd>
+  <p></p>
 
-3. ``
+2. Репозиторий Zabbix уже был настроен, поэтому пропустим этот пункт и перейдем к установке Zabbix агента.
+   Вначале установим Zabbix агент на ту же машину, на которой расположен Zabbix сервер.
+   
+  <p></p>
+  <kbd>
+    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/blob/master/img/task02-img02.png">
+  </kbd>
+  <p></p>
 
-4. ``
+3. Запустим Zabbix агент и настроем его запуск при загрузке системы.
 
-5. ``
+  <p></p>
+  <kbd>
+    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/blob/master/img/task02-img03.png">
+  </kbd>
+  <p></p>
 
-6. ``
+4. Увидим, что статус хоста Zabbix Server поменялся на Available.
 
-7. ``
+  <p></p>
+  <kbd>
+    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/blob/master/img/task02-img04.png">
+  </kbd>
+  <p></p> 
 
-8. ``
+5. Перейдем к установки Zabbix агента на вторую машину.
+   Для этого сначала настроим там Zabbix репозиторий как в задании 1 пункт 4
+   
+   * Скачаем файл с репозиторием
+   
+  <p></p>
+  <kbd>
+    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/blob/master/img/task02-img05-1.png">
+  </kbd>
+  <p></p>
+   
+   * Распакуем
 
-9. ``
+  <p></p>
+  <kbd>
+    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/blob/master/img/task02-img05-2.png">
+  </kbd>
+  <p></p> 
+   
+   * Обновим менеджер пакетов
+   
+  <p></p>
+  <kbd>
+    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/blob/master/img/task02-img05-3.png">
+  </kbd>
+  <p></p> 
 
-10. ``
+6. Установим Zabbix агент на вторую машину
+
+  <p></p>
+  <kbd>
+    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/blob/master/img/task02-img06.png">
+  </kbd>
+  <p></p> 
+
+7. Запустим Zabbix агент и настроем его запуск при загрузке системы.
+
+  <p></p>
+  <kbd>
+    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/blob/master/img/task02-img07.png">
+  </kbd>
+  <p></p> 
+
+8. Теперь необходимо подключится к этой машине с нашего Zabbix сервера через админку. 
+   Создадим новый хост и введем требуемые параметры. Подключаться будем по IP адресу внутренней подсети.
+   
+  <p></p>
+  <kbd>
+    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/blob/master/img/task02-img08.png">
+  </kbd>
+  <p></p>
+
+9. Видим, что сервер появился в списке, но пока недоступен.
+
+  <p></p>
+  <kbd>
+    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/blob/master/img/task02-img09.png">
+  </kbd>
+  <p></p>
+
+
+10. Настроим агент на хост, на котором установлен Zabbix сервер.
+    Для этого отредактируем конфигурационный файл на стороне агента. Добавим туда IP адрес нашего сервера.
+
+  <p></p>
+  <kbd>
+    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/blob/master/img/task02-img10.png">
+  </kbd>
+  <p></p> 
+    
+11. Теперь в админке настроем шаблон, по которому будут опрашиваться данные.
+    Выберем стандартный шаблон Linux by Zabbix agent
+
+  <p></p>
+  <kbd>
+    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/blob/master/img/task02-img11.png">
+  </kbd>
+  <p></p>
+
+12. Увидим, что статус второго хоста изменился, и он начал мониторится сервером.
+
+  <p></p>
+  <kbd>
+    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/blob/master/img/task02-img12.png">
+  </kbd>
+  <p></p>
+
+13. Через Latest Data проверим, что информация идет от агентов на обеих машинах.
+
+  <p></p>
+  <kbd>
+    <img src="https://github.com/AleksandrVikulov/08-02-zabbix-part-01/blob/master/img/task02-img13.png">
+  </kbd>
+  <p></p>
+
 
 ---
 ## Дополнительные задания (со звездочкой*)
